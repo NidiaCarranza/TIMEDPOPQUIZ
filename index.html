@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+ <!--CSS-->   
+    <link rel="stylesheet" href="ASSESTS/CSS/style.css">
+<!--Normalize css-->
+<img src= "ASSESTS/CSS/Normalize.cc">;
+ <!--Bootstrap-->
+</head>
+
+<body>
+    <div id=body></div>
+    <h1 id=header>Do you know the basics of coding? THIS IS YOUR CHANCE TO TEST YOUR SKILLS!</h1>
+    <div id="container">
+        <h2 id=subheader>Just think as this as a review from the basics we have learned (so far). 
+            <br>TAKE A DEEP BREATHE AND SAY: "I GOT THIS!"
+        </h2>
+
+        <img id="imgContainer" />
+        <div id="scoreContainer" style="display: none" src="https://media1.giphy.com/media/AIlrItaxPyivS/giphy.gif?cid=790b7611915658691b9a66a091adf7381ec39814c43ab2a2&rid=giphy.gif">
+        </div>
+
+        <button id="start">Start Quiz!</button>
+        <img id=img1 src="./IMAGES/MAN.jpeg" />
+        <div id="quiz" style="display: none">
+            <BR>
+            <img id='questionImg' />
+            <div id="question"></div>
+
+            <div id="choices">
+                <div class="choice" id="a" onclick="checkAnswer('a')"></div>
+                <div class="choice" id="b" onclick="checkAnswer('b')"></div>
+                <div class="choice" id="c" onclick="checkAnswer('c')"></div>
+                <div class='choice' id='d' onclick="checkAnswer('d')"></div>
+
+                <div id="timer">
+                    <p id="counter"></p>
+                    <div id="progress">
+                        <div id="timeBar">
+                        </div>
+                    </div>
+                </div>
+                <div id="mobileProgress">
+                    <div id="mobileTimeBar"></div>
+                </div>
+            </div>
+
+    
+
+    <script src="./ASSESTS/Javascript/script.js"></script>
+
+</body>
+
+</html>
